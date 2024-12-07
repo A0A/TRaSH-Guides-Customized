@@ -3,9 +3,18 @@
   "trash_scores": {
     "default": 2250
   },
-  "name": "PCM",
+  "name": "PCM (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "PCM",
       "implementation": "ReleaseTitleSpecification",

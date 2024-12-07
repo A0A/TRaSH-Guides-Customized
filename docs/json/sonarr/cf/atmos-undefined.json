@@ -3,9 +3,18 @@
   "trash_scores": {
     "default": 3000
   },
-  "name": "ATMOS (undefined)",
+  "name": "ATMOS (undefined) (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "ATMOS",
       "implementation": "ReleaseTitleSpecification",

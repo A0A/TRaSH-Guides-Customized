@@ -4,9 +4,18 @@
     "default": 2500
   },
   "trash_regex": "https://regex101.com/r/U1asQG/1",
-  "name": "DTS-HD MA",
+  "name": "DTS-HD MA (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "DTS-HD MA",
       "implementation": "ReleaseTitleSpecification",

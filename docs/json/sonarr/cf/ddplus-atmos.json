@@ -3,9 +3,18 @@
   "trash_scores": {
     "default": 3000
   },
-  "name": "DD+ ATMOS",
+  "name": "DD+ ATMOS (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "Dolby Digital Plus",
       "implementation": "ReleaseTitleSpecification",

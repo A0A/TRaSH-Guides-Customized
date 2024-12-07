@@ -3,9 +3,18 @@
   "trash_scores": {
     "default": 500
   },
-  "name": "MP3",
+  "name": "MP3 (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "MP3",
       "implementation": "ReleaseTitleSpecification",

@@ -3,9 +3,18 @@
   "trash_scores": {
     "default": 2750
   },
-  "name": "TrueHD",
+  "name": "TrueHD (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "TrueHD",
       "implementation": "ReleaseTitleSpecification",

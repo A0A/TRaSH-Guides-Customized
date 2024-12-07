@@ -4,9 +4,18 @@
     "default": 250
   },
   "trash_regex": "https://regex101.com/r/SsIWo3/1",
-  "name": "Opus",
+  "name": "Opus (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "Opus",
       "implementation": "ReleaseTitleSpecification",

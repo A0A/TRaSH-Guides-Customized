@@ -4,9 +4,18 @@
     "default": 1250
   },
   "trash_regex": "https://regex101.com/r/U1asQG/1",
-  "name": "DTS",
+  "name": "DTS (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "Basic DTS",
       "implementation": "ReleaseTitleSpecification",

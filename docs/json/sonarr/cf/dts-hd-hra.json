@@ -4,9 +4,18 @@
     "default": 2000
   },
   "trash_regex": "https://regex101.com/r/jdUH4x/2",
-  "name": "DTS-HD HRA",
+  "name": "DTS-HD HRA (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "DTS-HD HRA",
       "implementation": "ReleaseTitleSpecification",

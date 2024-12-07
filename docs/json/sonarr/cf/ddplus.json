@@ -3,9 +3,18 @@
   "trash_scores": {
     "default": 1750
   },
-  "name": "DD+",
+  "name": "DD+ (Remux Only)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
     {
       "name": "Dolby Digital Plus",
       "implementation": "ReleaseTitleSpecification",
